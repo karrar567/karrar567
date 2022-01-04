@@ -1,0 +1,65 @@
+// mobile first
+
+//desktop container size width: 642px; height: 351px;
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+* {
+  margin: 0;
+}
+body {
+  color: white;
+  overflow: hidden;
+  font-family: "Press Start 2P", cursive;
+  font-size: 2rem;
+}
+#game-container {
+  height: 100vh;
+  background-color: black;
+  position: relative;
+  display: flex;
+  .first-player-box,
+  .second-player-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .first-player-box {
+    border-right: 1px white solid;
+  }
+  .second-player-box {
+    border-left: 1px white solid;
+  }
+  .paddle {
+    background-color: white;
+    width: 15px;
+    height: 100px;
+    position: absolute;
+  }
+  #first-paddle {
+    margin-left: 1em;
+  }
+  #second-paddle {
+    margin-right: 1em;
+  }
+}
+#ball {
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+#ball {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%);
+}
+span {
+  position: absolute;
+  margin: 0.5em;
+}
+#first-player-score {
+  right: 0;
+}
+#second-player-score {
+  left: 0;
+}
